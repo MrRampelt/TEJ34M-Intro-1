@@ -52,6 +52,22 @@ int main(void)
             __delay_ms(100);
         }
         
+        if(SW3 == 0)
+        {
+            BEEPER = 1;
+            __delay_ms(1.136);
+            BEEPER = 0;
+            __delay_ms(1.136);
+        }
+
+        if(SW4 == 0)
+        {
+            LED5 = 1;
+        }
+        else
+        {
+            LED5 = 0;
+        }
 
         // Add code for your Program Analysis and Programming Activities here:
 
